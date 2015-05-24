@@ -1,0 +1,26 @@
+# Ignored files and directories.
+# 2012-2015 3E Enterprises, LLC
+
+# .gitkeep files are used to maintain directories.
+!.gitkeep
+
+# Vagrant data files.
+/.vagrant
+
+# Ignore puppet files
+/puppet/.tmp
+/puppet/modules/*
+!/puppet/modules/.gitkeep
+/puppet/Puppetfile.lock
+
+# Ignore DS_Store files
+.DS_Store
+
+# Ignore temp directory
+/temp
+
+# Ignore node_modules directories
+node_modules/
+
+# Igrnore npm debug logs
+npm-debug.log

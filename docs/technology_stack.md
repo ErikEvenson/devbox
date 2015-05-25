@@ -21,7 +21,7 @@ These are the technologies used in this project.
 ## npm-installed (global)
 
 - [npm](https://npmjs.org/doc/) 2.9.0 - "node package manager"
-* [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 [Fork](https://github.com/EATechnologies/npm-check-updates) - Find newer versions of dependencies than what your package.json allows.
+* [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
 
 ## Installed on host
 

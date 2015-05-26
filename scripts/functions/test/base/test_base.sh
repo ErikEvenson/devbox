@@ -64,5 +64,11 @@ test_base()
     RETVAL=1
   fi
 
+  # Verify protractor is installed.
+  if [ ! -e /usr/local/node/node-default/bin/protractor ]; then
+    echo "FAIL: protractor is not installed" >&2
+    RETVAL=1
+  fi
+
   return $RETVAL
 }

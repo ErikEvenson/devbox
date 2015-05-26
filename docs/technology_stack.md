@@ -5,8 +5,15 @@ These are the technologies used in this project.
 ## apt-get-installed
 
 - [git](http://packages.ubuntu.com/trusty/git) 1.9.1 [Changelog](https://github.com/git/git/tree/master/Documentation/RelNotes) - fast, scalable, distributed revision control system.
+- [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
 - [mercurial](http://packages.ubuntu.com/trusty/mercurial) 3.1 - easy-to-use, scalable distributed version control system.
+- [openjdk-7-jdk](http://packages.ubuntu.com/trusty/openjdk-7-jdk) 7u79-2.5.5-0ubuntu0.14.04.2 - OpenJDK Development Kit (JDK).
 - [vim](http://www.vim.org/) 2:7.4.052-1ubuntu3 - Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're already using vi or using a different editor.
+- [xfonts-100dpi](http://packages.ubuntu.com/trusty/xfonts-100dpi)
+- [xfonts-75dpi](http://packages.ubuntu.com/trusty/xfonts-75dpi)
+- [xfonts-scalable](http://packages.ubuntu.com/trusty/xfonts-scalable)
+- [xfonts-cyrillic](http://packages.ubuntu.com/trusty/xfonts-cyrillic)
+- [xvfb](http://packages.ubuntu.com/trusty/xvfb)
 
 ## bash-installed
 
@@ -22,6 +29,7 @@ These are the technologies used in this project.
 
 - [npm](https://npmjs.org/doc/) 2.9.0 - "node package manager"
 * [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
+- [protractor](https://www.npmjs.com/package/protractor) 2.1.0 - Webdriver E2E test wrapper for Angular.
 
 ## Installed on host
 
@@ -37,10 +45,11 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 
 ## Puppet modules
 
+- [garethr/heroku](https://forge.puppetlabs.com/garethr/heroku) 0.0.1 - Module to install the heroku toolbelt.
+- [jamesnetherton/google_chrome](https://forge.puppetlabs.com/jamesnetherton/google_chrome) 0.1.0 - Installs the Google Chrome web browser
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 1.8.0 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
 - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.6.0 - This module provides a "standard library" of resources for developing Puppet Modules.
 - [willdurand/nodejs](https://forge.puppetlabs.com/willdurand/nodejs) 1.8.5 - A module to install Node.js and NPM.
-- [garethr/heroku](https://forge.puppetlabs.com/garethr/heroku) 0.0.1 - Module to install the heroku toolbelt.
 
 ## Vagrant/vagrant-installed
 

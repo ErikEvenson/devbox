@@ -2,6 +2,9 @@
 # 2012-2015 Van Brunt and Associates and 3E Enterprises, LLC
 
 class dev_base {
+  # Install google chrome
+  include 'google_chrome'
+
   # Install heroku client
   include 'heroku'
 
@@ -27,9 +30,25 @@ class dev_base {
   Package {ensure => installed}
   
   $packages = [
+    # DVCSs
     'git',
     'mercurial',
+
+    # Editor
     'vim',
+
+    # Selenium/protractor support
+    'openjdk-7-jdk',
+
+    # xvfb support
+    # inspired by
+    # http://www.ramandv.com/blog/angularjs-protractor-selenium-headless-end-end-testing
+    'xfonts-100dpi',
+    'xfonts-75dpi',
+    'xfonts-scalable',
+    'xfonts-cyrillic',
+    'xvfb',
+    'imagemagick'
   ]
 
   package {$packages:}
@@ -54,6 +73,13 @@ class dev_base {
     require  => Class['nodejs'],
   }
 
+  package { 'protractor':
+    ensure   => '2.1.0',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   # Set vim as editor.
   exec { '/usr/bin/update-alternatives --set editor /usr/bin/vim.basic':
     require => Package['vim'],
@@ -71,6 +97,14 @@ class dev_base {
     command => '/bin/chown -R vagrant:vagrant /usr/local/node/',
     path    => '/bin',
     require => Package['npm'],
+    user    => 'root',
+  }
+
+  # Set up Protractor/Selenium
+  exec { 'webdriver-manager update':
+    command => '/usr/local/node/node-default/bin/webdriver-manager update',
+    path    => '/bin',
+    require => Package['protractor'],
     user    => 'root',
   }
 }

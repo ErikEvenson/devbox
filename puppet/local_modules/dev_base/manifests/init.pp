@@ -103,7 +103,7 @@ class dev_base {
   # Set up Protractor/Selenium
   exec { 'webdriver-manager update':
     command => '/usr/local/node/node-default/bin/webdriver-manager update',
-    path    => '/bin',
+    path    => ['/bin', '/usr/local/node/node-default/bin'],
     require => Package['protractor'],
     user    => 'root',
   }

@@ -60,6 +60,13 @@ class dev_base {
   }
 
   # Install global npm packages.  Update npm last.
+  package { 'mocha':
+    ensure   => '2.2.5',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   package { 'npm':
     ensure   => '2.9.0',
     provider => 'npm',

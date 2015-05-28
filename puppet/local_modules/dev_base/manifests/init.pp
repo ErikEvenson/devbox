@@ -15,7 +15,7 @@ class dev_base {
 
   # Install nodejs.
   class { 'nodejs':
-    version    => 'v0.12.2',
+    version    => 'v0.12.4',
   }
 
   # Add node path
@@ -68,7 +68,7 @@ class dev_base {
   }
 
   package { 'npm':
-    ensure   => '2.9.0',
+    ensure   => '2.10.1',
     provider => 'npm',
     require  => Class['nodejs'],
   }

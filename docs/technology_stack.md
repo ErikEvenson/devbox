@@ -18,7 +18,7 @@ These are the technologies used in this project.
 ## bash-installed
 
 - [mongoDB](http://www.mongodb.org/) 3.0.3 - The only database that harnesses the innovations of NoSQL (flexibility, scalability, performance) and builds on the foundation of relational databases (expressive query language, secondary indexes, strong consistency).
-- [node](https://nodejs.org/) 0.12.2 - A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+- [node](https://nodejs.org/) 0.12.4 - A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
 - [puppet](http://puppetlabs.com/) 3.7.5 - Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform.
 
 ## gem-installed
@@ -28,7 +28,7 @@ These are the technologies used in this project.
 ## npm-installed (global)
 
 - [gulp](https://www.npmjs.com/package/gulp) 3.8.11 - The streaming build system
-- [npm](https://npmjs.org/doc/) 2.9.0 - node package manager
+- [npm](https://npmjs.org/doc/) 2.10.1 - node package manager
 * [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
 - [protractor](https://www.npmjs.com/package/protractor) 2.1.0 - Webdriver E2E test wrapper for Angular.
 

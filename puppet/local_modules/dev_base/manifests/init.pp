@@ -67,13 +67,6 @@ class dev_base {
     require  => Class['nodejs'],
   }
 
-  package { 'mocha':
-    ensure   => '2.2.5',
-    notify   => Package['npm'],
-    provider => 'npm',
-    require  => Class['nodejs'],
-  }
-
   package { 'npm':
     ensure   => '2.9.0',
     provider => 'npm',

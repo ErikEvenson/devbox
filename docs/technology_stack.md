@@ -28,7 +28,6 @@ These are the technologies used in this project.
 ## npm-installed (global)
 
 - [gulp](https://www.npmjs.com/package/gulp) 3.8.11 - The streaming build system
-- [mocha](https://www.npmjs.com/package/mocha) 2.2.5 - simple, flexible, fun test framework
 - [npm](https://npmjs.org/doc/) 2.9.0 - node package manager
 * [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
 - [protractor](https://www.npmjs.com/package/protractor) 2.1.0 - Webdriver E2E test wrapper for Angular.

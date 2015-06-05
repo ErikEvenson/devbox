@@ -60,6 +60,13 @@ class dev_base {
   }
 
   # Install global npm packages.  Update npm last.
+  package { 'bower':
+    ensure   => '1.4.1',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   package { 'gulp':
     ensure   => '3.8.11',
     notify   => Package['npm'],

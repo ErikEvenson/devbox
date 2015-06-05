@@ -27,6 +27,7 @@ These are the technologies used in this project.
 
 ## npm-installed (global)
 
+- [bower](https://www.npmjs.com/package/bower) 1.4.1 - The browser package manager
 - [gulp](https://www.npmjs.com/package/gulp) 3.8.11 - The streaming build system
 - [npm](https://npmjs.org/doc/) 2.10.1 - node package manager
 * [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.

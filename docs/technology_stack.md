@@ -29,8 +29,9 @@ These are the technologies used in this project.
 
 - [bower](https://www.npmjs.com/package/bower) 1.4.1 - The browser package manager
 - [gulp](https://www.npmjs.com/package/gulp) 3.8.11 - The streaming build system
+- [karma-cli](https://www.npmjs.com/package/karma-cli) 0.0.4 - The Karma command line interface.
 - [npm](https://npmjs.org/doc/) 2.10.1 - node package manager
-* [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
+- [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
 - [protractor](https://www.npmjs.com/package/protractor) 2.1.0 - Webdriver E2E test wrapper for Angular.
 
 ## Installed on host

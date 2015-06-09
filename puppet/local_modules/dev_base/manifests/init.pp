@@ -74,6 +74,13 @@ class dev_base {
     require  => Class['nodejs'],
   }
 
+  package { 'karma-cli':
+    ensure   => '0.0.4',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   package { 'npm':
     ensure   => '2.10.1',
     provider => 'npm',

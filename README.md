@@ -48,7 +48,7 @@ Copy a version of any necessary ssh keys to the web VM.  ***Be sure not to commi
 
 ```bash
 mkdir temp
-cp -R ~/.ssh/{config,github,heroku} temp/.
+cp -R ~/.ssh/{config,bitbucket,github,heroku} temp/.
 ```
 
 Enter the virtual development environment on the web server.
@@ -60,7 +60,7 @@ vagrant ssh
 Move any ssh keys necessary (to connect to a github repository for example) to `~/.ssh` on web VM.  ***Be sure not to commit your ssh keys to any public repository.***
 
 ```bash
-mv temp/{config,github,heroku} ~/.ssh/.
+mv temp/{config,bitbucket,github,heroku} ~/.ssh/.
 ```
 
 If you will be committing from the VM, be sure to set your name and email for commit messages, and keep git from being chatty (substitute your data).

@@ -8,6 +8,8 @@ These are the technologies used in this project.
 - [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
 - [mercurial](http://packages.ubuntu.com/trusty/mercurial) 3.1 - easy-to-use, scalable distributed version control system.
 - [openjdk-7-jdk](http://packages.ubuntu.com/trusty/openjdk-7-jdk) 7u79-2.5.5-0ubuntu0.14.04.2 - OpenJDK Development Kit (JDK).
+- [pandoc](http://packages.ubuntu.com/trusty/pandoc) 1.12.2.1-1build2 - general markup converter
+- [texlive](http://packages.ubuntu.com/trusty/texlive) (2013.20140215-1 - TeX Live: A decent selection of the TeX Live packages
 - [vim](http://www.vim.org/) 2:7.4.052-1ubuntu3 - Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're already using vi or using a different editor.
 - [xfonts-100dpi](http://packages.ubuntu.com/trusty/xfonts-100dpi)
 - [xfonts-75dpi](http://packages.ubuntu.com/trusty/xfonts-75dpi)

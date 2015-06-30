@@ -48,7 +48,11 @@ class dev_base {
     'xfonts-scalable',
     'xfonts-cyrillic',
     'xvfb',
-    'imagemagick'
+    'imagemagick',
+
+    # pandoc support
+    'pandoc',
+    'texlive'
   ]
 
   package {$packages:}

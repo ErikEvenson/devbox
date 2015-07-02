@@ -26,7 +26,8 @@ class dev_base {
   
   require mongodb
 
-  # Install apt-get packages.
+  # Install apt-get packages.  These are typically version controlled by the
+  # package manager.
   Package {ensure => installed}
   
   $packages = [
@@ -52,7 +53,10 @@ class dev_base {
 
     # pandoc support
     'pandoc',
-    'texlive'
+    'texlive',
+
+    # docker support
+    'docker.io'
   ]
 
   package {$packages:}

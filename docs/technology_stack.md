@@ -4,6 +4,7 @@ These are the technologies used in this project.
 
 ## apt-get-installed
 
+- [docker.io](http://packages.ubuntu.com/trusty/docker.io) 0.9.1~dfsg1-2 - Linux container runtime
 - [git](http://packages.ubuntu.com/trusty/git) 1.9.1 [Changelog](https://github.com/git/git/tree/master/Documentation/RelNotes) - fast, scalable, distributed revision control system.
 - [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
 - [mercurial](http://packages.ubuntu.com/trusty/mercurial) 3.1 - easy-to-use, scalable distributed version control system.

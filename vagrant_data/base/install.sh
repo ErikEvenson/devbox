@@ -11,7 +11,7 @@ set -e
 # Load up the release information
 . /etc/lsb-release
 
-REPO_DEB_URL="http://apt.puppetlabs.com/puppetlabs-release-${DISTRIB_CODENAME}.deb"
+REPO_DEB_URL="https://apt.puppetlabs.com/puppetlabs-release-pc1-${DISTRIB_CODENAME}.deb"
 
 #--------------------------------------------------------------------
 # NO TUNABLES BELOW THIS POINT
@@ -43,21 +43,18 @@ apt-get update >/dev/null
 
 # Install Puppet
 echo "Installing Puppet..."
-DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install puppet >/dev/null
-
+apt-get install -y puppet-agent=1.2.2-1trusty
+echo "PATH=$PATH:/opt/puppetlabs/bin" > /etc/profile.d/puppetlabs.sh
 echo "Puppet installed!"
 
-# Alter puppet.conf to silence deprecation warning about temlatedir
-cat /etc/puppet/puppet.conf | sed -e "s/templatedir=/# templatedir=/" > /etc/puppet/puppet.conf
+# # Install RubyGems for the provider
+# echo "Installing RubyGems..."
+# if [ $DISTRIB_CODENAME != "trusty" ]; then
+#   apt-get install -y rubygems >/dev/null
+# fi
 
-# Install RubyGems for the provider
-echo "Installing RubyGems..."
-if [ $DISTRIB_CODENAME != "trusty" ]; then
-  apt-get install -y rubygems >/dev/null
-fi
+# # Use something like this in case of DDOS attacks on rubygems.org:
+# # gem sources --add http://54.186.104.15
 
-# Use something like this in case of DDOS attacks on rubygems.org:
-# gem sources --add http://54.186.104.15
-
-gem install --no-ri --no-rdoc rubygems-update
-update_rubygems >/dev/null
+# gem install --no-ri --no-rdoc rubygems-update
+# update_rubygems >/dev/null

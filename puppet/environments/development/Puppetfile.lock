@@ -1,0 +1,25 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    darin-zypprepo (1.0.2)
+    garethr-heroku (0.0.1)
+      maestrodev-wget (>= 0)
+    jamesnetherton-google_chrome (0.1.0)
+      darin-zypprepo (>= 1.0.1)
+      puppetlabs-apt (>= 1.4.2)
+      puppetlabs-stdlib (>= 3.2.0)
+    maestrodev-wget (1.7.0)
+    puppetlabs-apt (1.8.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-stdlib (4.6.0)
+    willdurand-nodejs (1.8.5)
+      maestrodev-wget (>= 1.2.0)
+      puppetlabs-stdlib (>= 3.2.1)
+
+DEPENDENCIES
+  garethr-heroku (= 0.0.1)
+  jamesnetherton-google_chrome (= 0.1.0)
+  puppetlabs-apt (= 1.8.0)
+  puppetlabs-stdlib (= 4.6.0)
+  willdurand-nodejs (= 1.8.5)
+

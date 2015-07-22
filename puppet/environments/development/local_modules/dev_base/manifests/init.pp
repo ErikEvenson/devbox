@@ -15,7 +15,7 @@ class dev_base {
 
   # Install nodejs.
   class { 'nodejs':
-    version    => 'v0.12.4',
+    version    => 'v0.12.7',
   }
 
   # Add node path

@@ -8,8 +8,8 @@
 /.vagrant
 
 # Ignore puppet files
-/puppet/.tmp
-/puppet/modules/*
+/puppet/environments/**/.tmp
+/puppet/environments/**/modules/*
 !/puppet/modules/.gitkeep
 /puppet/Puppetfile.lock
 

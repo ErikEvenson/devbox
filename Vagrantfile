@@ -17,10 +17,10 @@ PUPPET_MANIFESTS_PATH   = "puppet/manifests"
 PUPPET_MODULE_PATH      = ["puppet/modules", "puppet/local_modules"]
 SYNCED_FOLDER           = "/vagrant"
 SYNCED_FOLDER_TYPE      = "nfs"
-VAGRANT_VERSION_REQUIRE = ">= 1.7.2"
+VAGRANT_VERSION_REQUIRE = ">= 1.7.4"
 VAGRANTFILE_API_VERSION = "2"
 VM_BOX                  = "ubuntu/trusty64"
-VM_BOX_VERSION          = "20150521.0.0"
+VM_BOX_VERSION          = "20150609.0.10"
 
 # Lock down vagrant version.
 Vagrant.require_version VAGRANT_VERSION_REQUIRE

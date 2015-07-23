@@ -43,7 +43,6 @@ apt-get update >/dev/null
 
 # Install Puppet
 echo "Installing Puppet..."
-echo $(ls)
 apt-get install -y puppet-agent=1.2.2-1trusty
 echo "PATH=$PATH:/opt/puppetlabs/bin" > /etc/profile.d/puppetlabs.sh
 echo "Puppet installed!"

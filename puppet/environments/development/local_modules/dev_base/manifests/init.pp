@@ -1,7 +1,13 @@
-# Installs development base.
-# 2012-2015 Van Brunt and Associates and 3E Enterprises, LLC
+# Development environment
+# 3E Enterprises, LLC
 
 class dev_base {
+  # Install docker
+  class {'docker':
+    docker_users => ['vagrant'],
+    version      => '1.7.1',
+  }
+
   # Install google chrome
   include 'google_chrome'
 
@@ -53,10 +59,7 @@ class dev_base {
 
     # pandoc support
     'pandoc',
-    'texlive',
-
-    # docker support
-    'docker.io'
+    'texlive'
   ]
 
   package {$packages:}

@@ -4,7 +4,6 @@ These are the technologies used in this project.
 
 ## apt-get-installed
 
-- [docker.io](http://packages.ubuntu.com/trusty/docker.io) 0.9.1~dfsg1-2 - Linux container runtime
 - [git](http://packages.ubuntu.com/trusty/git) 1.9.1 [Changelog](https://github.com/git/git/tree/master/Documentation/RelNotes) - fast, scalable, distributed revision control system.
 - [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
 - [mercurial](http://packages.ubuntu.com/trusty/mercurial) 3.1 - easy-to-use, scalable distributed version control system.
@@ -49,10 +48,12 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) 0.10.0 [Changelog[(https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant-vbguest) - automatically keeps VirtualBox Guest Additions up to date.  ***Updates are manual.***
 - [VirtualBox](https://www.virtualbox.org/) 5.0.0 - used to host development environment.
 
-## Puppet modules
+## Puppet modules/installed by puppet modules
 
+- [docker](https://www.docker.com/) 1.7.1 - Linux container runtime
 - [garethr/heroku](https://forge.puppetlabs.com/garethr/heroku) 0.0.1 - Module to install the heroku toolbelt.
 - [jamesnetherton/google_chrome](https://forge.puppetlabs.com/jamesnetherton/google_chrome) 0.1.0 - Installs the Google Chrome web browser
+- [puppetlabs/docker_platform](https://forge.puppetlabs.com/puppetlabs/docker_platform) 1.0.1 - Installs, configures, and manages the Docker daemon and Docker containers.
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 1.8.0 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
 - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.6.0 - This module provides a "standard library" of resources for developing Puppet Modules.
 - [willdurand/nodejs](https://forge.puppetlabs.com/willdurand/nodejs) 1.8.5 - A module to install Node.js and NPM.

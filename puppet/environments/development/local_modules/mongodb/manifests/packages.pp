@@ -2,7 +2,7 @@
 # 2014 3E Enterprises, LLC
 
 class mongodb::packages {
-  require updates
+  require mongodb::updates
 
   package {
     'mongodb-org':

@@ -30,7 +30,7 @@ class dev_base {
     source => 'puppet:///modules/dev_base/nodejs_path.sh',
   }
   
-  #require mongodb
+  require mongodb
 
   # Install apt-get packages.  These are typically version controlled by the
   # package manager.

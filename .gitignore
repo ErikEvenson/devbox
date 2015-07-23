@@ -10,7 +10,7 @@
 # Ignore puppet files
 /puppet/environments/**/.tmp
 /puppet/environments/**/modules/*
-!/puppet/modules/.gitkeep
+!/puppet/environments/**/modules/.gitkeep
 /puppet/environments/**/Puppetfile.lock
 
 # Ignore DS_Store files

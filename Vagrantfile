@@ -56,7 +56,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       puppet.hiera_config_path = HIERA_CONFIG_PATH
       puppet.environment       = ENVIRONMENT
       puppet.environment_path  = ENVIRONMENT_PATH
-      puppet.options = "--strict_variables"
+      #puppet.options = "--strict_variables"
       puppet.working_directory = "/tmp/vagrant-puppet/environments/development"
     end
 

@@ -2,7 +2,7 @@
 # 2014 3E Enterprises, LLC
 
 class mongodb::services {
-  require configure
+  require mongodb::configure
 
   service {
     'mongod':

@@ -9,12 +9,11 @@
 BOOTSTRAP_SCRIPT        = "vagrant_data/base/install.sh"
 CPUS                    = "1"
 IP                      = "192.168.50.4"
-HIERA_CONFIG_PATH       = "puppet/hiera.yaml"
+ENVIRONMENT             = "development"
+ENVIRONMENT_PATH        = "./puppet/environments"
+HIERA_CONFIG_PATH       = "./puppet/environments/development/hiera.yaml"
 MEMORY                  = "512"
 PROVIDER                = "virtualbox"
-PUPPET_MANIFEST_FILE    = "nodes/base.pp"
-PUPPET_MANIFESTS_PATH   = "puppet/manifests"
-PUPPET_MODULE_PATH      = ["puppet/modules", "puppet/local_modules"]
 SYNCED_FOLDER           = "/vagrant"
 SYNCED_FOLDER_TYPE      = "nfs"
 VAGRANT_VERSION_REQUIRE = ">= 1.7.4"
@@ -30,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vbguest.no_install = false
 
   # vagrant-librarian-puppet config
-  config.librarian_puppet.puppetfile_dir       = "puppet"
+  config.librarian_puppet.puppetfile_dir       = "puppet/environments/development"
   config.librarian_puppet.placeholder_filename = ".gitkeep"
 
   # Lock box version down.
@@ -43,19 +42,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Configure cached packages to be shared between instances of the same base box.
     # More info on the "Usage" link above
     config.cache.scope = :box
-
-    # OPTIONAL: If you are using VirtualBox, you might want to use that to enable
-    # NFS for shared folders. This is also very useful for vagrant-libvirt if you
-    # want bi-directional sync
-    
-    # config.cache.synced_folder_opts = {
-    #   type: :nfs,
-    #   # The nolock option can be useful for an NFSv3 client that wants to avoid the
-    #   # NLM sideband protocol. Without this option, apt-get might hang if it tries
-    #   # to lock files needed for /var/cache/* operations. All of this can be avoided
-    #   # by using NFSv4 everywhere. Please note that the tcp option is not the default.
-    #   mount_options: ['rw', 'vers=3', 'tcp', 'nolock']
-    # }
   end
 
   # Run the bootstrap script on every machine.
@@ -68,9 +54,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     base.vm.provision :puppet, run: "always" do |puppet|
       puppet.hiera_config_path = HIERA_CONFIG_PATH
-      puppet.manifests_path    = PUPPET_MANIFESTS_PATH
-      puppet.module_path       = PUPPET_MODULE_PATH
-      puppet.manifest_file     = PUPPET_MANIFEST_FILE
+      puppet.environment       = ENVIRONMENT
+      puppet.environment_path  = ENVIRONMENT_PATH
+      #puppet.options = "--strict_variables"
+      puppet.working_directory = "/tmp/vagrant-puppet/environments/development"
     end
 
     # Set up VM

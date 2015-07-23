@@ -7,6 +7,7 @@ These are the technologies used in this project.
 - [git](http://packages.ubuntu.com/trusty/git) 1.9.1 [Changelog](https://github.com/git/git/tree/master/Documentation/RelNotes) - fast, scalable, distributed revision control system.
 - [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
 - [mercurial](http://packages.ubuntu.com/trusty/mercurial) 3.1 - easy-to-use, scalable distributed version control system.
+- [mongoDB](http://www.mongodb.org/) 3.0.4 - The only database that harnesses the innovations of NoSQL (flexibility, scalability, performance) and builds on the foundation of relational databases (expressive query language, secondary indexes, strong consistency).
 - [openjdk-7-jdk](http://packages.ubuntu.com/trusty/openjdk-7-jdk) 7u79-2.5.5-0ubuntu0.14.04.2 - OpenJDK Development Kit (JDK).
 - [pandoc](http://packages.ubuntu.com/trusty/pandoc) 1.12.2.1-1build2 - general markup converter
 - [puppet-agent](http://puppetlabs.com/) 1.2.2-1trusty - Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform.
@@ -20,8 +21,6 @@ These are the technologies used in this project.
 
 ## bash-installed
 
-- [mongoDB](http://www.mongodb.org/) 3.0.3 - The only database that harnesses the innovations of NoSQL (flexibility, scalability, performance) and builds on the foundation of relational databases (expressive query language, secondary indexes, strong consistency).
-
 ## gem-installed
 
 - [puppet-lint](http://puppet-lint.com/) 1.1.0 - Check that your Puppet manifest conform to the style guide.
@@ -29,9 +28,9 @@ These are the technologies used in this project.
 ## npm-installed (global)
 
 - [bower](https://www.npmjs.com/package/bower) 1.4.1 - The browser package manager
-- [gulp](https://www.npmjs.com/package/gulp) 3.8.11 - The streaming build system
-- [karma-cli](https://www.npmjs.com/package/karma-cli) 0.0.4 - The Karma command line interface.
-- [npm](https://npmjs.org/doc/) 2.10.1 - node package manager
+- [gulp](https://www.npmjs.com/package/gulp) 3.9.0 - The streaming build system
+- [karma-cli](https://www.npmjs.com/package/karma-cli) 0.1.0 - The Karma command line interface.
+- [npm](https://npmjs.org/doc/) 2.13.1 - node package manager
 - [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
 - [protractor](https://www.npmjs.com/package/protractor) 2.1.0 - Webdriver E2E test wrapper for Angular.
 

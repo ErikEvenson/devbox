@@ -6,6 +6,6 @@ class mongodb::packages {
 
   package {
     'mongodb-org':
-      ensure => '3.0.3',
+      ensure => '3.0.4',
   }
 }

@@ -79,21 +79,21 @@ class dev_base {
   }
 
   package { 'gulp':
-    ensure   => '3.8.11',
+    ensure   => '3.9.0',
     notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],
   }
 
   package { 'karma-cli':
-    ensure   => '0.0.4',
+    ensure   => '0.1.0',
     notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],
   }
 
   package { 'npm':
-    ensure   => '2.10.1',
+    ensure   => '2.13.1',
     provider => 'npm',
     require  => Class['nodejs'],
   }

@@ -1,6 +1,6 @@
 # Base box
 
-This is a base vagrant box with a puppet provisioner.  The stack used is documented at [docs/technology_stack.md](docs/technology_stack.md).
+This is a base vagrant box with a puppet provisioner.  The stack used is documented at [docs/technology_stack.md](docs/technology_stack.md).  The changelog is at [docs/changelog.md](docs/technology_stack.md).
 
 ## Setting up the base box
 

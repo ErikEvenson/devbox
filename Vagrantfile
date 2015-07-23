@@ -14,7 +14,6 @@ ENVIRONMENT_PATH        = "./puppet/environments"
 HIERA_CONFIG_PATH       = "./puppet/environments/development/hiera.yaml"
 MEMORY                  = "512"
 PROVIDER                = "virtualbox"
-PUPPET_MODULE_PATH      = ["puppet/modules", "puppet/local_modules"]
 SYNCED_FOLDER           = "/vagrant"
 SYNCED_FOLDER_TYPE      = "nfs"
 VAGRANT_VERSION_REQUIRE = ">= 1.7.4"
@@ -57,6 +56,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       puppet.hiera_config_path = HIERA_CONFIG_PATH
       puppet.environment       = ENVIRONMENT
       puppet.environment_path  = ENVIRONMENT_PATH
+      puppet.working_directory = "/tmp/vagrant-puppet/environments/development"
     end
 
     # Set up VM

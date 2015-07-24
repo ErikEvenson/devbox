@@ -92,6 +92,13 @@ class dev_base {
     require  => Class['nodejs'],
   }
 
+  package { 'nodemon':
+    ensure   => '1.3.8',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
   package { 'npm':
     ensure   => '2.13.1',
     provider => 'npm',

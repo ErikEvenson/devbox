@@ -9,7 +9,8 @@
 - Upgrades karma-cli to 0.1.0.
 - Upgrades npm to 2.13.1.
 - Upgrades mongodb to 3.0.4.
-- Add nodemon 1.3.8 globally.
+- Adds nodemon 1.3.8 globally.
+- Adds packer 0.8.2.
 
 ## 1.0.0
 

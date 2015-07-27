@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1
+
+- Documentation fixes.
+
 ## 2.0.0
 
 - Adds puppet agent 1.2.2 which includes puppet 4.2.1.

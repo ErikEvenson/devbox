@@ -2,7 +2,7 @@
 
 ## devbox-min
 
-- Eliminates most packages except docker, DVCSs, and vim.
+- Eliminates most packages except docker, DVCSs, packer, and vim.
 
 ## 2.0.1
 

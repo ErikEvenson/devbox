@@ -2,6 +2,11 @@
 # 3E Enterprises, LLC
 
 class dev_base {
+  # Install packer
+  class {'packer':
+    version => '0.8.2',
+  }
+  
   # Install docker
   class {'docker':
     docker_users => ['vagrant'],

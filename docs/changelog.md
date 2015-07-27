@@ -1,5 +1,9 @@
 # Changelog
 
+## devbox-min
+
+- Eliminates most packages except docker, DVCSs, and vim.
+
 ## 2.0.1
 
 - Documentation fixes.

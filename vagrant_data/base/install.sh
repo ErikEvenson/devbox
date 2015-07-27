@@ -11,7 +11,8 @@ set -e
 # Load up the release information
 . /etc/lsb-release
 
-REPO_DEB_URL="http://apt.puppetlabs.com/puppetlabs-release-${DISTRIB_CODENAME}.deb"
+PUPPET_AGENT_VERSION="1.2.2-1trusty"
+REPO_DEB_URL="https://apt.puppetlabs.com/puppetlabs-release-pc1-${DISTRIB_CODENAME}.deb"
 
 #--------------------------------------------------------------------
 # NO TUNABLES BELOW THIS POINT
@@ -36,28 +37,13 @@ apt-get install -y wget >/dev/null
 
 # Install the PuppetLabs repo
 echo "Configuring PuppetLabs repo..."
-repo_deb_path=$(mktemp)
-wget --output-document="${repo_deb_path}" "${REPO_DEB_URL}" 2>/dev/null
-dpkg -i "${repo_deb_path}" >/dev/null
+REPO_DEB_PATH=$(mktemp)
+wget --output-document="${REPO_DEB_PATH}" "${REPO_DEB_URL}" 2>/dev/null
+dpkg -i "${REPO_DEB_PATH}" >/dev/null
 apt-get update >/dev/null
 
 # Install Puppet
 echo "Installing Puppet..."
-DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install puppet >/dev/null
-
+apt-get install -y puppet-agent=${PUPPET_AGENT_VERSION}
+echo "PATH=\$PATH:/opt/puppetlabs/bin" > /etc/profile.d/puppetlabs.sh
 echo "Puppet installed!"
-
-# Alter puppet.conf to silence deprecation warning about temlatedir
-cat /etc/puppet/puppet.conf | sed -e "s/templatedir=/# templatedir=/" > /etc/puppet/puppet.conf
-
-# Install RubyGems for the provider
-echo "Installing RubyGems..."
-if [ $DISTRIB_CODENAME != "trusty" ]; then
-  apt-get install -y rubygems >/dev/null
-fi
-
-# Use something like this in case of DDOS attacks on rubygems.org:
-# gem sources --add http://54.186.104.15
-
-gem install --no-ri --no-rdoc rubygems-update
-update_rubygems >/dev/null

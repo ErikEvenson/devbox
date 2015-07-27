@@ -2,10 +2,10 @@
 # 2014 3E Enterprises, LLC
 
 class mongodb::packages {
-  require updates
+  require mongodb::updates
 
   package {
     'mongodb-org':
-      ensure => '3.0.3',
+      ensure => '3.0.4',
   }
 }

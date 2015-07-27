@@ -2,5 +2,5 @@
 # 2014 3E Enterprises, LLC
 
 class mongodb::configure {
-  require packages
+  require mongodb::packages
 }

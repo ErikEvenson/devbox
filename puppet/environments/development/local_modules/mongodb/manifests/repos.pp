@@ -2,7 +2,7 @@
 # 2014 3E Enterprises, LLC
 
 class mongodb::repos {
-  require users
+  require mongodb::users
 
   #lets install some repos
   exec {

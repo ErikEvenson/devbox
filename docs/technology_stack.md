@@ -4,12 +4,13 @@ These are the technologies used in this project.
 
 ## apt-get-installed
 
-- [docker.io](http://packages.ubuntu.com/trusty/docker.io) 0.9.1~dfsg1-2 - Linux container runtime
 - [git](http://packages.ubuntu.com/trusty/git) 1.9.1 [Changelog](https://github.com/git/git/tree/master/Documentation/RelNotes) - fast, scalable, distributed revision control system.
 - [imagemagick](http://packages.ubuntu.com/trusty/imagemagick)
 - [mercurial](http://packages.ubuntu.com/trusty/mercurial) 3.1 - easy-to-use, scalable distributed version control system.
+- [mongoDB](http://www.mongodb.org/) 3.0.4 - The only database that harnesses the innovations of NoSQL (flexibility, scalability, performance) and builds on the foundation of relational databases (expressive query language, secondary indexes, strong consistency).
 - [openjdk-7-jdk](http://packages.ubuntu.com/trusty/openjdk-7-jdk) 7u79-2.5.5-0ubuntu0.14.04.2 - OpenJDK Development Kit (JDK).
 - [pandoc](http://packages.ubuntu.com/trusty/pandoc) 1.12.2.1-1build2 - general markup converter
+- [puppet-agent](http://puppetlabs.com/) 1.2.2-1trusty - Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform.
 - [texlive](http://packages.ubuntu.com/trusty/texlive) (2013.20140215-1 - TeX Live: A decent selection of the TeX Live packages
 - [vim](http://www.vim.org/) 2:7.4.052-1ubuntu3 - Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're already using vi or using a different editor.
 - [xfonts-100dpi](http://packages.ubuntu.com/trusty/xfonts-100dpi)
@@ -20,10 +21,6 @@ These are the technologies used in this project.
 
 ## bash-installed
 
-- [mongoDB](http://www.mongodb.org/) 3.0.3 - The only database that harnesses the innovations of NoSQL (flexibility, scalability, performance) and builds on the foundation of relational databases (expressive query language, secondary indexes, strong consistency).
-- [node](https://nodejs.org/) 0.12.4 - A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
-- [puppet](http://puppetlabs.com/) 3.7.5 - Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform.
-
 ## gem-installed
 
 - [puppet-lint](http://puppet-lint.com/) 1.1.0 - Check that your Puppet manifest conform to the style guide.
@@ -31,9 +28,10 @@ These are the technologies used in this project.
 ## npm-installed (global)
 
 - [bower](https://www.npmjs.com/package/bower) 1.4.1 - The browser package manager
-- [gulp](https://www.npmjs.com/package/gulp) 3.8.11 - The streaming build system
-- [karma-cli](https://www.npmjs.com/package/karma-cli) 0.0.4 - The Karma command line interface.
-- [npm](https://npmjs.org/doc/) 2.10.1 - node package manager
+- [gulp](https://www.npmjs.com/package/gulp) 3.9.0 - The streaming build system
+- [karma-cli](https://www.npmjs.com/package/karma-cli) 0.1.0 - The Karma command line interface.
+- [nodemon](https://www.npmjs.com/package/nodemon) 1.3.8 - Simple monitor script for use during development of a node.js app.
+- [npm](https://npmjs.org/doc/) 2.13.1 - node package manager
 - [npm-check-updates](https://www.npmjs.org/package/npm-check-updates) 1.5.1 - Find newer versions of dependencies than what your package.json allows.
 - [protractor](https://www.npmjs.com/package/protractor) 2.1.0 - Webdriver E2E test wrapper for Angular.
 
@@ -43,16 +41,21 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 
 ***Check for updates manually.***
 
-- [Vagrant](https://www.vagrantup.com/) 1.7.2 [Change log](https://github.com/mitchellh/vagrant/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant) - used to manage development environment configuration.
+- [Vagrant](https://www.vagrantup.com/) 1.7.4 [Change log](https://github.com/mitchellh/vagrant/blob/master/CHANGELOG.md) - used to manage development environment configuration.
 - [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) 1.2.0 - A Vagrant plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances.
 - [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet) 0.9.0 - A Vagrant plugin to install Puppet modules using Librarian-Puppet.
 - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) 0.10.0 [Changelog[(https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant-vbguest) - automatically keeps VirtualBox Guest Additions up to date.  ***Updates are manual.***
-- [VirtualBox](https://www.virtualbox.org/) 4.3.28 - used to host development environment.
+- [VirtualBox](https://www.virtualbox.org/) 5.0.0 - used to host development environment.
 
-## Puppet modules
+## Puppet modules/installed by puppet modules
 
+- [docker](https://www.docker.com/) 1.7.1 - Linux container runtime
 - [garethr/heroku](https://forge.puppetlabs.com/garethr/heroku) 0.0.1 - Module to install the heroku toolbelt.
 - [jamesnetherton/google_chrome](https://forge.puppetlabs.com/jamesnetherton/google_chrome) 0.1.0 - Installs the Google Chrome web browser
+- [node](https://nodejs.org/) 0.12.7 - A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+- [counsyl/packer](https://forge.puppetlabs.com/counsyl/packer) 0.9.16 - Puppet module for installing Packer, the modern automated machine image creation tool.
+- [packer](https://www.packer.io) 0.8.2 - a tool for creating machine and container images for multiple platforms from a single source configuration.
+- [puppetlabs/docker_platform](https://forge.puppetlabs.com/puppetlabs/docker_platform) 1.0.1 - Installs, configures, and manages the Docker daemon and Docker containers.
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 1.8.0 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
 - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.6.0 - This module provides a "standard library" of resources for developing Puppet Modules.
 - [willdurand/nodejs](https://forge.puppetlabs.com/willdurand/nodejs) 1.8.5 - A module to install Node.js and NPM.

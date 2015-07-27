@@ -2,7 +2,7 @@
 # 2014 3E Enterprises, LLC
 
 class mongodb::updates {
-  require repos
+  require mongodb::repos
 
   # We must run apt-get update before we install our
   # package because we installed some repo's

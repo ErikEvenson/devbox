@@ -1,7 +1,18 @@
-# Installs development base.
-# 2012-2015 Van Brunt and Associates and 3E Enterprises, LLC
+# Development environment
+# 3E Enterprises, LLC
 
 class dev_base {
+  # Install packer
+  class {'packer':
+    version => '0.8.2',
+  }
+
+  # Install docker
+  class {'docker':
+    docker_users => ['vagrant'],
+    version      => '1.7.1',
+  }
+
   # Install google chrome
   include 'google_chrome'
 
@@ -15,7 +26,7 @@ class dev_base {
 
   # Install nodejs.
   class { 'nodejs':
-    version    => 'v0.12.4',
+    version    => 'v0.12.7',
   }
 
   # Add node path
@@ -53,10 +64,7 @@ class dev_base {
 
     # pandoc support
     'pandoc',
-    'texlive',
-
-    # docker support
-    'docker.io'
+    'texlive'
   ]
 
   package {$packages:}
@@ -76,21 +84,28 @@ class dev_base {
   }
 
   package { 'gulp':
-    ensure   => '3.8.11',
+    ensure   => '3.9.0',
     notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],
   }
 
   package { 'karma-cli':
-    ensure   => '0.0.4',
+    ensure   => '0.1.0',
+    notify   => Package['npm'],
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'nodemon':
+    ensure   => '1.3.8',
     notify   => Package['npm'],
     provider => 'npm',
     require  => Class['nodejs'],
   }
 
   package { 'npm':
-    ensure   => '2.10.1',
+    ensure   => '2.13.1',
     provider => 'npm',
     require  => Class['nodejs'],
   }

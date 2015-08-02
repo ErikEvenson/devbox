@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0
+
+- Eliminates most packages except docker, DVCSs, packer, and vim.
+
 ## 2.0.1
 
 - Documentation fixes.

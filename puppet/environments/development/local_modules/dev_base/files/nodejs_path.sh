@@ -1,1 +1,0 @@
-NODE_PATH='/usr/local/node/node-default/lib/node_modules'

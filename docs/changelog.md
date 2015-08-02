@@ -1,6 +1,6 @@
 # Changelog
 
-## devbox-min
+## 3.0.0
 
 - Eliminates most packages except docker, DVCSs, packer, and vim.
 

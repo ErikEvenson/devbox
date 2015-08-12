@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.0dev
+
+- Upgrades puppetlabs/docker_platform to 1.1.0.
+- Upgrades docker to 1.8.0.
+
 ## 3.0.0
 
 - Eliminates most packages except docker, DVCSs, packer, and vim.

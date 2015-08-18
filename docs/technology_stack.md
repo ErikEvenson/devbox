@@ -26,7 +26,7 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 - [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) 1.2.0 - A Vagrant plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances.
 - [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet) 0.9.0 - A Vagrant plugin to install Puppet modules using Librarian-Puppet.
 - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) 0.10.0 [Changelog[(https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant-vbguest) - automatically keeps VirtualBox Guest Additions up to date.  ***Updates are manual.***
-- [VirtualBox](https://www.virtualbox.org/) 5.0.0 - used to host development environment.
+- [VirtualBox](https://www.virtualbox.org/) 5.0.2 - used to host development environment.
 
 ## Puppet modules/installed by puppet modules
 

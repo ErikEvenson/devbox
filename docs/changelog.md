@@ -1,9 +1,12 @@
 # Changelog
 
+# 3.0.1
+
+- Increase memory allocation.
+
 ## 3.0.0
 
 - Eliminates most packages except docker, DVCSs, packer, and vim.
-- Increase memory allocation.
 
 ## 2.0.1
 

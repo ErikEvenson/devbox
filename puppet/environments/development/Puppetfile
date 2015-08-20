@@ -2,5 +2,5 @@ forge "https://forge.puppetlabs.com"
 
 mod 'counsyl/packer', '0.9.16'
 mod 'puppetlabs-apt', '1.8.0'
-mod 'puppetlabs/docker_platform', '1.0.1'
+mod 'garethr/docker', '4.1.1'
 mod 'puppetlabs-stdlib', '4.6.0'

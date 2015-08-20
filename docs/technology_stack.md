@@ -26,14 +26,14 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 - [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) 1.2.0 - A Vagrant plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances.
 - [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet) 0.9.0 - A Vagrant plugin to install Puppet modules using Librarian-Puppet.
 - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) 0.10.0 [Changelog[(https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant-vbguest) - automatically keeps VirtualBox Guest Additions up to date.  ***Updates are manual.***
-- [VirtualBox](https://www.virtualbox.org/) 5.0.0 - used to host development environment.
+- [VirtualBox](https://www.virtualbox.org/) 5.0.2 - used to host development environment.
 
 ## Puppet modules/installed by puppet modules
 
 - [counsyl/packer](https://forge.puppetlabs.com/counsyl/packer) 0.9.16 - Puppet module for installing Packer, the modern automated machine image creation tool.
 - [docker](https://www.docker.com/) 1.7.1 - Linux container runtime.
 - [packer](https://www.packer.io) 0.8.2 - a tool for creating machine and container images for multiple platforms from a single source configuration.
-- [puppetlabs/docker_platform](https://forge.puppetlabs.com/puppetlabs/docker_platform) 1.0.1 - Installs, configures, and manages the Docker daemon and Docker containers.
+- [garethr/docker](https://forge.puppetlabs.com/garethr/docker) 4.1.1 - Module for installing and managing docker.
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 1.8.0 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
 - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.6.0 - This module provides a "standard library" of resources for developing Puppet Modules.
 

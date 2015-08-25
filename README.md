@@ -24,6 +24,20 @@ vagrant plugin install vagrant-vbguest --plugin-version 0.10.0
 vagrant plugin install vagrant-librarian-puppet --plugin-version 0.9.0
 ```
 
+These plugins are often necessary for some reason:
+
+- Install [vagrant-puppet-install](https://github.com/petems/vagrant-puppet-install)
+
+```bash
+vagrant plugin install vagrant-puppet-install --plugin-version 2.0.0
+```
+
+- Install [vagrant-r10k](https://github.com/jantman/vagrant-r10k)
+
+```bash
+vagrant plugin install vagrant-r10k --plugin-version 0.2.0
+```
+
 Remove any existing vagrant boxes.
 	
 ```bash

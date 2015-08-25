@@ -1,5 +1,9 @@
 # Changelog
 
+# 3.0.2
+
+- Add vagrant plugin modules: vagrant-puppet-install, vagrant-r10k.
+
 # 3.0.1
 
 - Increase memory allocation.

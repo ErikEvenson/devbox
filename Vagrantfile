@@ -50,6 +50,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Build the base VM (base):
   config.vm.define :"base", primary: true do |base|
     base.vm.hostname = "base"
+    base.vm.network "public_network" #, bridge: 'en7: Thunderbolt Ethernet'
+    base.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
     base.vm.network :private_network, ip: IP
 
     base.vm.provision :puppet, run: "always" do |puppet|

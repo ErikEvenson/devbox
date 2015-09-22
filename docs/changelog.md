@@ -1,5 +1,9 @@
 # Changelog
 
+# 3.0.3
+
+- Add bridged network support.
+
 # 3.0.2
 
 - Add vagrant plugin modules: vagrant-puppet-install, vagrant-r10k.

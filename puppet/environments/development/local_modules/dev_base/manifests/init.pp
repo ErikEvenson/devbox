@@ -4,13 +4,13 @@
 class dev_base {
   # Install packer
   class {'packer':
-    version => '0.8.2',
+    version => '0.8.6',
   }
   
   # Install docker
   class {'docker':
     docker_users => ['vagrant'],
-    version      => '1.7.1',
+    version      => '1.8.2',
   }
 
   # Install apt-get packages.  These are typically version controlled by the

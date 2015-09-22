@@ -1,5 +1,15 @@
 # Changelog
 
+# 3.0.4
+
+- Updates ubuntu image to 20150911.0.0.
+- Updates virtualbox version to 5.0.4.
+- Updates counsyl/packer to 0.9.17.
+- Updates packer to 0.8.6.
+- Updates docker to 1.8.2.
+- Updates puppetlabs-apt to 2.1.1.
+- Updates puppetlabs-stdlib to 4.9.0.
+
 # 3.0.3
 
 - Add bridged network support.

@@ -33,7 +33,7 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 ## Puppet modules/installed by puppet modules
 
 - [counsyl/packer](https://forge.puppetlabs.com/counsyl/packer) 0.9.17 - Puppet module for installing Packer, the modern automated machine image creation tool.
-- [docker](https://www.docker.com/) 1.8.2 - Linux container runtime.
+- [docker](https://www.docker.com/) 1.7.1 - Linux container runtime.
 - [garethr/docker](https://forge.puppetlabs.com/garethr/docker) 4.1.1 - Module for installing and managing docker.
 - [packer](https://www.packer.io) 0.8.6 - a tool for creating machine and container images for multiple platforms from a single source configuration.
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 2.1.1 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.

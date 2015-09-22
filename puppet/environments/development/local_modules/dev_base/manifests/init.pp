@@ -10,7 +10,7 @@ class dev_base {
   # Install docker
   class {'docker':
     docker_users => ['vagrant'],
-    version      => '1.8.2',
+    version      => '1.7.1',
   }
 
   # Install apt-get packages.  These are typically version controlled by the

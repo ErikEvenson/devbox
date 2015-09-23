@@ -4,7 +4,7 @@
 class dev_base {
   # Install packer
   class {'packer':
-    version => '0.8.2',
+    version => '0.8.6',
   }
   
   # Install docker

@@ -4,8 +4,8 @@ These are the technologies used in this project.
 
 ## apt-get-installed
 
-- [git](http://packages.ubuntu.com/trusty/git) 1.9.1 [Changelog](https://github.com/git/git/tree/master/Documentation/RelNotes) - fast, scalable, distributed revision control system.
-- [mercurial](http://packages.ubuntu.com/trusty/mercurial) 3.1 - easy-to-use, scalable distributed version control system.
+- [git](http://packages.ubuntu.com/trusty/git) 1:1.9.1-1ubuntu0.1 [Changelog](https://github.com/git/git/tree/master/Documentation/RelNotes) - fast, scalable, distributed revision control system.
+- [mercurial](http://packages.ubuntu.com/trusty/mercurial) 2.8.2-1ubuntu1.3 - easy-to-use, scalable distributed version control system.
 - [puppet-agent](http://puppetlabs.com/) 1.2.2-1trusty - Open source Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform.
 - [vim](http://www.vim.org/) 2:7.4.052-1ubuntu3 - Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're already using vi or using a different editor.
 
@@ -28,17 +28,17 @@ These tools are installed directly on the host.  On a Mac, they are can be insta
 - [vagrant-puppet-install](https://github.com/petems/vagrant-puppet-install) 2.0.0 - A Vagrant plugin that ensures the desired version of Puppet is installed via the Puppet Labs package repo.
 - [vagrant-r10k](https://github.com/jantman/vagrant-r10k) 0.2.0 - Vagrant middleware plugin to retrieve puppet modules using r10k.
 - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) 0.10.0 [Changelog[(https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md) [Fork](https://github.com/EATechnologies/vagrant-vbguest) - automatically keeps VirtualBox Guest Additions up to date.  ***Updates are manual.***
-- [VirtualBox](https://www.virtualbox.org/) 5.0.2 - used to host development environment.
+- [VirtualBox](https://www.virtualbox.org/) 5.0.4 - used to host development environment.
 
 ## Puppet modules/installed by puppet modules
 
-- [counsyl/packer](https://forge.puppetlabs.com/counsyl/packer) 0.9.16 - Puppet module for installing Packer, the modern automated machine image creation tool.
+- [counsyl/packer](https://forge.puppetlabs.com/counsyl/packer) 0.9.17 - Puppet module for installing Packer, the modern automated machine image creation tool.
 - [docker](https://www.docker.com/) 1.7.1 - Linux container runtime.
-- [packer](https://www.packer.io) 0.8.2 - a tool for creating machine and container images for multiple platforms from a single source configuration.
 - [garethr/docker](https://forge.puppetlabs.com/garethr/docker) 4.1.1 - Module for installing and managing docker.
-- [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 1.8.0 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
-- [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.6.0 - This module provides a "standard library" of resources for developing Puppet Modules.
+- [packer](https://www.packer.io) 0.8.6 - a tool for creating machine and container images for multiple platforms from a single source configuration.
+- [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 2.1.1 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
+- [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.9.0 - This module provides a "standard library" of resources for developing Puppet Modules.
 
 ## Vagrant/vagrant-installed
 
-- [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) 20150521.0.0
+- [ubuntu/trusty64](https://atlas.hashicorp.com/ubuntu/boxes/trusty64) 20150911.0.0

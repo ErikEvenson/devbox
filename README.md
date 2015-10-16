@@ -32,12 +32,6 @@ These plugins are often necessary for some reason:
 vagrant plugin install vagrant-puppet-install --plugin-version 2.0.0
 ```
 
-- Install [vagrant-r10k](https://github.com/jantman/vagrant-r10k)
-
-```bash
-vagrant plugin install vagrant-r10k --plugin-version 0.2.0
-```
-
 Remove any existing vagrant boxes.
 	
 ```bash
@@ -57,6 +51,8 @@ Bring up the box -- this will take a while the first time to both download and p
 ```bash
 vagrant up
 ```
+
+***Add comments about bridged network***
 
 Copy a version of any necessary ssh keys to the web VM.  ***Be sure not to commit your ssh keys to the repository.***
 

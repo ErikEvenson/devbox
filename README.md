@@ -1,21 +1,18 @@
 # Base box
-
 This is a base vagrant box with a puppet provisioner.  The stack used is documented at [docs/technology_stack.md](docs/technology_stack.md).  The changelog is at [docs/changelog.md](docs/changelog.md).
 
 ## Setting up the base box
-
 Using the base box requires installing two packages on the host machine: [VirtualBox](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/).  Both are free.  On a Mac, the easiest way to install both is via [Homebrew](http://mxcl.github.io/homebrew/) and [homebrew-cask](https://github.com/phinze/homebrew-cask).  See the `technology_stack.md` document to find out what versions of software are known to be compatible.
-
 - Install [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/)
 
 ```bash
-vagrant plugin install vagrant-cachier --plugin-version 1.2.0
+vagrant plugin install vagrant-cachier --plugin-version 1.2.1
 ```
 
 - Install [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
 
 ```bash
-vagrant plugin install vagrant-vbguest --plugin-version 0.10.0
+vagrant plugin install vagrant-vbguest --plugin-version 0.11.0
 ```
 
 - Install [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet)
@@ -25,7 +22,6 @@ vagrant plugin install vagrant-librarian-puppet --plugin-version 0.9.0
 ```
 
 These plugins are often necessary for some reason:
-
 - Install [vagrant-puppet-install](https://github.com/petems/vagrant-puppet-install)
 
 ```bash
@@ -33,7 +29,7 @@ vagrant plugin install vagrant-puppet-install --plugin-version 2.0.0
 ```
 
 Remove any existing vagrant boxes.
-	
+
 ```bash
 vagrant destroy
 ```
@@ -45,16 +41,15 @@ vagrant box remove <box name>
 ```
 
 ## Using the base box
-
 Bring up the box -- this will take a while the first time to both download and provision the box.  A password may be necessary for the host to enable folder syncing.
 
 ```bash
 vagrant up
 ```
 
-***Add comments about bridged network***
+**_Add comments about bridged network_**
 
-Copy a version of any necessary ssh keys to the web VM.  ***Be sure not to commit your ssh keys to the repository.***
+Copy a version of any necessary ssh keys to the web VM.  **_Be sure not to commit your ssh keys to the repository._**
 
 ```bash
 mkdir temp
@@ -67,7 +62,7 @@ Enter the virtual development environment on the web server.
 vagrant ssh
 ```
 
-Move any ssh keys necessary (to connect to a github repository for example) to `~/.ssh` on web VM.  ***Be sure not to commit your ssh keys to any public repository.***
+Move any ssh keys necessary (to connect to a github repository for example) to `~/.ssh` on web VM.  **_Be sure not to commit your ssh keys to any public repository._**
 
 ```bash
 mv temp/{config,bitbucket,github,heroku} ~/.ssh/.
@@ -90,9 +85,7 @@ eval `ssh-agent -s` && ssh-add ~/.ssh/**/*id_rsa
 When done, exit the virtual environment and `vagrant halt` to stop the virtual machine.  Use `vagrant destroy` to reclaim the disk space (although this will require you to re-provision the machine again later).  `vagrant remove` should be used to remove the base box from the system as well.  `vagrant up` and `vagrant ssh web` to start another development session later.
 
 ## Scripts
-
 ### Lint scripts
-
 Linting of the puppet scripts can be done via [puppet-lint](http://puppet-lint.com/) with:
 
 ```bash
@@ -102,7 +95,6 @@ Linting of the puppet scripts can be done via [puppet-lint](http://puppet-lint.c
 This will lint manifests and local_modules.
 
 ### Puppet scripts
-
 Puppet script validation can be performed with:
 
 ```bash

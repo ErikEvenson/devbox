@@ -19,7 +19,7 @@ SYNCED_FOLDER_TYPE      = "nfs"
 VAGRANT_VERSION_REQUIRE = ">= 1.7.4"
 VAGRANTFILE_API_VERSION = "2"
 VM_BOX                  = "ubuntu/trusty64"
-VM_BOX_VERSION          = "20150911.0.0"
+VM_BOX_VERSION          = "20151203.2.0"
 
 # Lock down vagrant version.
 Vagrant.require_version VAGRANT_VERSION_REQUIRE
@@ -37,7 +37,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_version      = VM_BOX_VERSION
   config.vm.box_check_update = true
   config.vm.synced_folder ".", SYNCED_FOLDER, type: SYNCED_FOLDER_TYPE
-  
+
   if Vagrant.has_plugin?("vagrant-cachier")
     # Configure cached packages to be shared between instances of the same base box.
     # More info on the "Usage" link above

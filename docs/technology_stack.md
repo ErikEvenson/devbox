@@ -15,18 +15,18 @@ These are the technologies used in this project.
 These tools are installed directly on the host.  On a Mac, they are can be installed easily using [homebrew](http://brew.sh/) and [homebrew cask](http://caskroom.io/).
 
 **_Check for updates manually._**
-- [Vagrant](https://www.vagrantup.com/) 1.7.4 [Change log](https://github.com/mitchellh/vagrant/blob/master/CHANGELOG.md) - used to manage development environment configuration.
+- [Vagrant](https://www.vagrantup.com/) 1.8.4 [Change log](https://github.com/mitchellh/vagrant/blob/master/CHANGELOG.md) - used to manage development environment configuration.
 - [vagrant-cachier](https://github.com/fgrehm/vagrant-cachier/) 1.2.1 - A Vagrant plugin that helps you reduce the amount of coffee you drink while waiting for boxes to be provisioned by sharing a common package cache among similiar VM instances.
-- [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet) 0.9.0 - A Vagrant plugin to install Puppet modules using Librarian-Puppet.
+- [vagrant-librarian-puppet](https://github.com/mhahn/vagrant-librarian-puppet) 0.9.2 - A Vagrant plugin to install Puppet modules using Librarian-Puppet.
 - [vagrant-puppet-install](https://github.com/petems/vagrant-puppet-install) 2.0.0 - A Vagrant plugin that ensures the desired version of Puppet is installed via the Puppet Labs package repo.
 - [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) 0.11.0 [Changelog[([https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md](https://github.com/dotless-de/vagrant-vbguest/blob/master/CHANGELOG.md)) [Fork](https://github.com/EATechnologies/vagrant-vbguest) - automatically keeps VirtualBox Guest Additions up to date.  **_Updates are manual._**
-- [VirtualBox](https://www.virtualbox.org/) 5.0.10 - used to host development environment.
+- [VirtualBox](https://www.virtualbox.org/) 5.0.20 - used to host development environment.
 
 ## Puppet modules/installed by puppet modules
-- [counsyl/packer](https://forge.puppetlabs.com/counsyl/packer) 0.9.17 - Puppet module for installing Packer, the modern automated machine image creation tool.
+- [counsyl/packer](https://forge.puppetlabs.com/counsyl/packer) 0.9.18 - Puppet module for installing Packer, the modern automated machine image creation tool.
 - [docker](https://www.docker.com/) 1.9.1 - Linux container runtime.
 - [garethr/docker](https://forge.puppetlabs.com/garethr/docker) 4.1.1 - Module for installing and managing docker.
-- [packer](https://www.packer.io) 0.8.6 - a tool for creating machine and container images for multiple platforms from a single source configuration.
+- [packer](https://www.packer.io) 0.10.1 - a tool for creating machine and container images for multiple platforms from a single source configuration.
 - [puppetlabs-apt](https://forge.puppetlabs.com/puppetlabs/apt) 2.2.1 - The APT module provides a simple interface for managing APT source, key, and definitions with Puppet.
 - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib) 4.9.1 - This module provides a "standard library" of resources for developing Puppet Modules.
 

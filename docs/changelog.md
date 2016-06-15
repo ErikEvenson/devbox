@@ -1,4 +1,10 @@
 # Changelog
+## 3.0.6
+- Updates vagrant-librarian-puppet to 0.9.2
+- Updates vagrant to 1.8.4
+- Updates counsyl/packer to 0.9.18
+- Updates packer to 0.10.1
+
 ## 3.0.5
 - Updates vagrant-cachier to 1.2.1
 - Updates vagrant-vbguest to 0.11.0

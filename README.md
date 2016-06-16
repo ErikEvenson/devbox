@@ -79,6 +79,7 @@ git config --global push.default simple
 Enable ssh-agent if you have added ssh keys.
 
 ```bash
+chmod 600 ~/.ssh/**/*id_rsa
 eval `ssh-agent -s` && ssh-add ~/.ssh/**/*id_rsa
 ```
 
